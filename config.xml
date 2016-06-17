@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.nucleo.c4ut " version="1.6.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>C4ut</name>
+    <description>
+       C4u
+    </description>
+    <author email="dev@n4ymedio.mx" href="n4ymedio.mx">
+        Nucleo 4 y Medio
+    </author>
+    <content src="index.html" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarStyle" value="default" />
+    <preference name="target-device" value="handset" />
+    <preference name="BackgroundColor" value="0x0000"/>
+    <preference name="stay-in-webview"       value="false" />   
+    <preference name="ios-statusbarstyle"    value="black-opaque" />
+   
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+    <gap:plugin name="cordova-plugin-device" source="npm" />
+    <gap:plugin name="cordova-plugin-network-information" source="npm" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+    <gap:plugin name="cordova-plugin-geolocation" source="npm" version="1.0.1" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
+    <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.4.0" />
+
+
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
+
+    <preference name="HideKeyboardFormAccessoryBar" value="true" />
+
+     <gap:splash src="splash.9.png" />
+
+    <feature name="http://api.phonegap.com/1.0/geolocation" />
+    <feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="http://api.phonegap.com/1.0/geolocation" />
+    <feature name="http://api.phonegap.com/1.0/notification" />
+
+    <gap:config-file platform="ios" parent="UIStatusBarHidden">
+    <true/>
+</gap:config-file>
+
+<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
+    <false/>
+</gap:config-file>
+
+
+    <preference name="SplashScreen" value="screen"/>
+    <preference name="SplashScreenDelay" value="7000" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashScreenBackgroundColor" value="0x0000" /> 
+   
+    <icon src="icon.png"/>
+    <icon src="iconIOS.png" gap:platform="ios" width="57" height="57"/>
+    <icon src="iconIOS2.png" gap:platform="ios" width="120" height="120"/>
+
+
+<!-- iPhone and iPod touch -->
+<splash src="Default.png" platform="ios" width="320" height="480" />
+<splash src="Default@2x.png" platform="ios" width="640" height="960" />
+
+<!-- iPhone 5 / iPod Touch (5th Generation) -->
+<splash src="Default-568h@2x.png" platform="ios" width="640" height="1136" />
+
+<!-- iPhone 6 -->
+<splash src="Default-667h@2x.png" platform="ios" width="750" height="1334" />
+<splash src="Default-Portrait-736h@3x.png" platform="ios" width="1242" height="2208" />
+<splash src="Default-Landscape-736h@3x.png" platform="ios" width="2208" height="1242" />
+
+<!-- iPad -->
+<splash src="Default-Portrait.png" platform="ios" width="768" height="1024" />
+<splash src="Default-Landscape.png" platform="ios" width="1024" height="768" />
+
+<!-- Retina iPad -->
+<splash src="Default-Portrait@2x.png" platform="ios" width="1536" height="2048" />
+<splash src="Default-Landscape@2x.png" platform="ios" width="2048" height="1536" />
+
+
+
+
+
+    <access origin="*" />
+    <preference name="EnableViewportScale" value="false" />
+    <access origin="geo:*" launch-external="yes"/>
+    <access origin="google.navigation:*" launch-external="yes"/>
+    <access origin="*://*.googleapis.com/*" subdomains="true" />
+    <access origin="*://*.gstatic.com/*" subdomains="true" />
+    <access origin="*://*.google.com/*" subdomains="true" />
+    <access origin="*://*.googleusercontent.com/*" subdomains="true" />
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+
+    <allow-intent href="geo:*" />
+
+
+     <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+    <allow-navigation href="http://autotips.mx/*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
+
+</widget>

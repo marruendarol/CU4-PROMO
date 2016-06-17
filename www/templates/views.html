@@ -1,0 +1,521 @@
+<!-- FIRST ============================================================-->
+<script id='firstT' type='text/ractive'>
+           <button class="btnGen" on-tap="login">Ingresar a mi cuenta</button>
+           <button class="btnGen" on-tap="registro">Registrar usuario nuevo</button>
+</script>
+
+<!--  LOGIN ============================================================-->
+<script id='loginT' type='text/ractive'>
+
+	
+
+
+		<div class="small-12 column">
+
+            <input  data-role="none" class="inputCustom" placeholder="Usuario" type="email" name="name" id="name" value="" data-clear-btn="true" data-mini="true">
+            <input data-role="none" class="inputCustom" placeholder="Contraseña" type="password" name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true">
+
+             <a href="#" data-rel="close" data-role="none" class="btnNaranja ui-btn ui-shadow " on-tap="ingresar">Ingresar</a>    
+
+                <a class="linksTexto" href="#recuperar">¿Olvidaste tu contraseña?</a>
+
+
+                <div class="small-12 column botsBot">
+
+                	 <a class="linksTexto" style="float:left;" href="#aviso">Aviso de Privacidad</a>
+                	 <a class="linksTexto" style="float:right;" href="#terminos">Terminos y condiciones</a>
+
+                </div>
+
+        </div>    
+
+               
+
+</script>
+
+<!--  Recuperar ============================================================-->
+<script id='recuperarT' type='text/ractive'>
+    
+
+
+    <div  role="main" class="ui-content">
+      <div class="title">Ingresa tu correo y te enviaremos tu contraseña</div>
+            <div class="labelT">Correo:</div>
+            <input type="text" name="name" id="email" value="" data-clear-btn="true" data-mini="true">
+            <div class="ui-grid-a">
+				<a href="#" data-rel="close" class="btnNaranja " on-tap="recuperar">Enviar correo</a>
+            </div>
+    </div>
+    
+
+</script>
+
+<!--  REGISTRO ============================================================-->
+<script id='registroVentaT' type='text/ractive'>
+    
+    {{>menuT}}
+
+    <div id="wrapperReg" class="wrapper" >
+	    <div id="scroller" >
+
+	<div class="conte">
+
+	
+		<div class="small-12 column">
+
+
+          	<div class="small-12 medium-6 large-6 ">
+	             <div class="formLabel">No. Serie del Teléfono:</div>
+	             <input data-role="none" class="inputCustom"  style=" text-transform: uppercase;" id="serie" type="text" value=""  />
+          	</div>
+
+<!-->
+          		<div class="small-12 medium-6 large-6 ">
+	             <div class="formLabel">Modelo:</div>
+	             <select id="modelos">
+            	
+            	</select>
+
+     -->    
+            	
+
+  
+
+          	<div class="agregar" on-click="agregarUnidad"><img class="plusimg" src="img/plus.png" > Agregar unidad</div>
+
+          	{{#if unidades.length>0}}
+
+          	<div class="small-12 unidades">
+	          	{{#each unidades}}
+	          	<div style="margin-bottom: 5px;height: auto;overflow-y:hidden; ">
+	          	<div class="small-4 column"><div>{{noserie}}</div></div>
+	          	<div class="small-5 column"><div>{{modeloName}}</div></div>
+	          	<div class="small-3 column"><div>{{precioMask}}</div></div>
+	          	</div>
+	          	{{/each}}
+          	</div>
+
+
+          	{{/if}}
+
+          	<hr>
+
+          	<div class="small-12 medium-6 large-6 ">
+	             <div class="formLabel">Id Ticket:</div>
+	             <input data-role="none" class="inputCustom" id="idTicket" style=" text-transform: uppercase;" type="text" value=""  />
+          	</div>
+
+          	<div class="small-12 medium-6 large-6 ">
+	             <div class="formLabel">Monto total:</div>
+	             <input data-role="none" class="inputCustom" disabled id="monto" type="text" value=""  />
+          	</div>
+
+
+
+
+          	  <a href="#" on-tap="validate"  data-rel="close" data-role="none" class="btnNaranja ui-btn ui-shadow ">Registrar venta</a>
+          	 
+
+
+		</div>
+          
+		
+
+
+     </div>
+
+    	</div>
+    </div>
+
+</script>
+
+
+
+
+<!--  HOME ============================================================-->
+	<script id='mainT' type='text/ractive'>
+    
+	{{>menuT}}
+
+	 <div data-role="header" id="headerLogo" data-position="fixed">
+      
+
+     <!--   <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>  -->
+        <a href="#add-form"  class="gearIco ui-btn-right" data-iconpos="notext"><i class="fa fa-user  fa-2x" aria-hidden="true"></i></a>
+    </div><!-- /header -->
+
+    <div role="main" >
+           <div id="wrapperMain" >
+
+           	  <div id="logoHeader">
+		<img src="img/logo.png">
+	</div>
+
+		       <div id="scroller">
+		             <ul class="listMenu" data-role="listview" id="listview">
+							<li>
+							<div class="listMain" on-tap="regVenta">
+								
+								<div class="mainIcoText">Registrar Venta</div>
+							</div>
+							</li>
+
+							<li>
+							<div class="listMain" on-tap="getHistorico">
+								<div class="mainIcoText">Historico ventas</div>
+							</div>
+							</li>
+		             </ul>
+		        </div>
+		</div>
+    </div><!-- /content -->
+
+
+    <div data-role="footer" data-position="fixed" style="position:fixed;bottom:0;"> 
+			<img class="imgBanner"  on-click="openLink" id="imgBanner" src="http://autotips.mx:3018/uploads/docs/{{img}}">
+	</div> 
+    
+ 
+      
+      <div id="map" style="display:none;"></div>
+
+    </script>
+
+
+
+<!-- Listado 1  ============================================================-->
+<script id='listadoVentaT' type='text/ractive'>
+
+	<div id="wrapperList" >
+	    <div id="scroller" >
+	        <ul data-role="listview" id="listview">
+	            {{#items}}
+	            <li  data-icon="false">
+	                <a class="autoli whiteB" on-tap="listDetail" data-transition="fade">
+	                   
+	                    <div class="small-7 column rPad">
+	                        <div class="nSucursal">{{idTicket}}</div>
+	                        <div class="sublabel">{{timeConverter(ts)}}</div>
+
+
+	                       
+	                    </div>
+
+	                  
+
+	                    <div class="small-3 column rPad">
+	                        <div class="distancia">${{formatMoney(monto,2, '.', ',')}}</div>
+	                        </div>
+	      
+	                    
+	                    <div class="small-1 column rPad">
+	                        <div class="fNaranja"> 
+	                        <img src="img/fNaranja.png">
+	                        </div>
+	                    </div>
+	                </a>
+	            </li>
+	            {{/items}}
+	        </ul>
+
+	        {{#if empty}}
+	        	<h4 style="margin:20px;">No existen registros de ventas</h4>
+	        {{/if}}
+
+	    </div>
+	</div>
+
+	<div data-role="footer" data-position="fixed" style="position:fixed;bottom:0;"> 
+			
+
+	</div> 
+
+
+</script>
+
+
+
+
+<!-- Listado 1  ============================================================-->
+<script id='listadoInventarioT' type='text/ractive'>
+
+	<div id="wrapperInventario" >
+	    <div id="scroller" >
+	        <ul data-role="listview" id="listviewI">
+	            {{#items}}
+	            <li  data-icon="false">
+	                <a class="autoli whiteB" on-tap="listDetail" data-transition="fade">
+	                   
+	                    <div class="small-9 column rPad">
+	                        <div class="nSucursal"><div class="mCount">{{count}}</div> {{_id}}</div>
+	                       
+	                    </div>
+
+	                  
+
+	      
+	                    
+	                    <div class="small-1 column rPad">
+	                        <div class="fNaranja"> 
+	                        <img src="img/fNaranja.png">
+	                        </div>
+	                    </div>
+	                </a>
+	            </li>
+	            {{/items}}
+	        </ul>
+
+	        {{#if empty}}
+	        	<h4 style="margin:20px;"> Sin Resultados, intente otra búsqueda</h4>
+	        {{/if}}
+
+	    </div>
+	</div>
+
+	<div data-role="footer" data-position="fixed" style="position:fixed;bottom:0;"> 
+			
+
+	</div> 
+
+
+</script>
+
+
+
+
+
+<!--  AVISO  ============================================================-->
+<script id='avisoT' type='text/ractive'>
+    
+
+    <div  role="main" class="ui-content">
+      <div class="title">Aviso de Privacidad</div>
+           
+    </div>
+    
+
+</script>
+
+
+
+<!--  Recuperar ============================================================-->
+<script id='terminosT' type='text/ractive'>
+    
+
+
+    <div  role="main" class="ui-content">
+      <div class="title">Terminos y condiciones</div>
+          
+    </div>
+    
+
+</script>
+
+
+<!--  Info Sucursal ============================================================-->
+<script id='infoInventarioT' type='text/ractive'>
+
+	
+	
+	<div id="wrapperInfoInventario" class="wrapper" >
+	    <div id="scroller" >
+
+<div class="conte">
+
+			<div class="separator"></div>
+
+		 <div class="small-12 column collapse">
+	    	<div class="small-5 column collapse">	
+	        	<div class="titDato ">Nombre:</div>
+	        </div>
+	        <div class="small-7 column collapse">	
+	        	<div class="txtDato ">{{nombre}}</div>
+	        </div>	
+	    </div>
+
+	    <div class="separator"></div>
+
+
+	    <div class="small-12 column collapse">
+	    	<div class="small-5 column collapse">	
+	        	<div class="titDato ">Descripción:</div>
+	        </div>
+	        <div class="small-7 column collapse">	
+	        	<div class="txtDato ">{{descripcion}}</div>
+	        </div>	
+	    </div>
+
+	     <div class="separator"></div>
+
+
+	    <div class="small-12 column collapse">
+	    	<div class="small-5 column collapse">	
+	        	<div class="titDato ">Especificaciones:</div>
+	        </div>
+	        <div class="small-7 column collapse">	
+	        	<div class="txtDato ">{{espec}}</div>
+	        </div>	
+	    </div>
+
+
+	    <div class="small-12 column collapse">
+	    	<div class="small-5 column collapse">	
+	        	<div class="titDato ">Imagenes:</div>
+	        </div>
+	        {{#each imagenes}}
+	        <div class="small-7 column collapse">	
+	        	<div class="txtDato "><img src="http://localhost:3033/uploads/docs/{{url}}"></div>
+	        </div>	
+	        {{/each}}
+	    </div>
+
+
+
+	   
+
+</div>
+
+	     </div>
+	</div>
+
+	
+</script>
+
+
+<!--  MAPA ============================================================-->
+	<script id='mapaT' type='text/ractive'>
+    
+	
+
+	 <div role="main" class="ui-content">
+	<div style="display:none;"><input  id="pac-input" type="text" placeholder="Escribe tu dirección, Código Postal ó Ciudad" /></div>
+	<div id="ubica"></div>
+	</div>
+
+	
+
+</script>
+
+
+
+<!--  Info Sucursal ============================================================-->
+<script id='infoVentaT' type='text/ractive'>
+
+	
+	
+	<div id="wrapperInfo" class="wrapper" >
+	    <div id="scroller" >
+
+<div class="conte">
+
+			<div class="separator"></div>
+
+		 <div class="small-12 column collapse">
+	    	<div class="small-5 column collapse">	
+	        	<div class="titDato ">Ticket ID:</div>
+	        </div>
+	        <div class="small-7 column collapse">	
+	        	<div class="txtDato ">{{idTicket}}</div>
+	        </div>	
+	    </div>
+
+	    <div class="separator"></div>
+
+
+	    <div class="small-12 column collapse">
+	    	<div class="small-5 column collapse">	
+	        	<div class="titDato ">Monto Total:</div>
+	        </div>
+	        <div class="small-7 column collapse">	
+	        	<div class="txtDato ">${{formatMoney(monto)}}</div>
+	        </div>	
+	    </div>
+
+	     <div class="separator"></div>
+
+
+	    <div class="small-12 column collapse">
+	    	<div class="small-5 column collapse">	
+	        	<div class="titDato ">Fecha y Hora:</div>
+	        </div>
+	        <div class="small-7 column collapse">	
+	        	<div class="txtDato ">{{timeConverter(ts)}}</div>
+	        </div>	
+	    </div>
+
+
+	     <div class="separator"></div>
+
+
+
+	     <div class="small-12 column collapse">
+	    	
+	        
+	        	<div class="small-12 unidades">
+		          	{{#each unidades}}
+		          	<div style="margin-bottom: 5px;height: auto;overflow-y:hidden; ">
+		          	<div class="small-4 column"><div>{{noserie}}</div></div>
+		          	<div class="small-5 column"><div>{{modeloName}}</div></div>
+		          	<div class="small-3 column"><div>{{precioMask}}</div></div>
+		          	</div>
+		          	{{/each}}
+          		</div>
+
+	    </div>
+
+
+	     <div class="separator"></div>
+
+	   
+	   
+
+</div>
+
+	     </div>
+	</div>
+
+	
+</script>
+
+
+<!--  LOGIN ============================================================-->
+<script id='contactoT' type='text/ractive'>
+    
+			<div class="saveBtn small-12 column">
+			<div class="title">Envía tus comentarios</div>
+	        <div class="formLabel">Comentario:</div>
+            <textarea  data-clear-btn="true"  style="margin-left:7px height:100px; !important;" rows="8" name="textarea" id="comentario" data-mini="true"></textarea>
+
+             <div on-tap="sendComment" class="btnNaranja  column ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Enviar Mensaje</div>
+             <div class="vSpace"></div>
+             <hr>
+              <div class="btnNaranja  column ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini" on-tap="dial">Marcar a Autotips 01-800</div>  
+ 
+            </div>
+
+
+            
+            
+          
+</script>
+
+
+
+<!--  MENU ============================================================-->
+<script id='menuT' type='text/html'>
+ 
+
+
+    <div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="b" id="add-form">
+
+            <label for="name">Bienvenido:</label>
+            <h3>{{userData.nombre}}</h3>
+
+            
+            <button on-tap="cerrarsesion" class="btnNaranja ui-btn ui-shadow " >cerrar sesión</button>
+
+            <div class="version">versión 1.1</div>
+
+    </div><!-- /panel -->
+
+</script>

@@ -1,0 +1,1427 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"info",
+				"infoRel"
+			],
+			[
+				"cy",
+				"cypherMain"
+			],
+			[
+				"desc",
+				"descVar"
+			],
+			[
+				"tar",
+				"target"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"detea",
+				"detailView"
+			],
+			[
+				"detai",
+				"detailView"
+			],
+			[
+				"setl",
+				"setLocation"
+			],
+			[
+				"trig",
+				"triggerSearch"
+			],
+			[
+				"tri",
+				"triggerSearch"
+			],
+			[
+				"tr",
+				"trySearch"
+			],
+			[
+				"g",
+				"gGeo"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"ini",
+				"init"
+			],
+			[
+				"c",
+				"context"
+			],
+			[
+				"wee",
+				"weekMax"
+			],
+			[
+				"res",
+				"refresh"
+			],
+			[
+				"base",
+				"baseRet"
+			],
+			[
+				"node",
+				"nodeId"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
+				"com",
+				"comms"
+			],
+			[
+				"data",
+				"dataB"
+			],
+			[
+				"ts",
+				"tsPlus"
+			],
+			[
+				"user",
+				"userLoop"
+			],
+			[
+				"sus",
+				"suscriptores"
+			],
+			[
+				"ma",
+				"maxWeek"
+			],
+			[
+				"week",
+				"weekS"
+			],
+			[
+				"w",
+				"weekS"
+			],
+			[
+				"cr",
+				"crucigrama"
+			],
+			[
+				"we",
+				"week"
+			],
+			[
+				"le",
+				"letras"
+			],
+			[
+				"pun",
+				"puntosPalabra"
+			],
+			[
+				"puntst",
+				"puntosTotales"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"alta",
+				"altasList"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"punt",
+				"puntosTotal"
+			],
+			[
+				"err",
+				"errorNum"
+			],
+			[
+				"word",
+				"wordsList"
+			],
+			[
+				"init",
+				"initWord"
+			],
+			[
+				"pala",
+				"palabrasTot"
+			],
+			[
+				"pa",
+				"palabraOn"
+			],
+			[
+				"palabraT",
+				"palabrasTot"
+			],
+			[
+				"pal",
+				"palabraOn"
+			],
+			[
+				"lett",
+				"letterArr"
+			],
+			[
+				"spa",
+				"spaces"
+			],
+			[
+				"ctr",
+				"ctrl_letras"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"ret",
+				"retFields"
+			],
+			[
+				"get",
+				"getQuery"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"update",
+				"updatePuntuacionRet"
+			],
+			[
+				"upd",
+				"updatePuntuacion"
+			],
+			[
+				"upda",
+				"updatePuntuacionRet"
+			],
+			[
+				"pu",
+				"puntosCruci"
+			],
+			[
+				"puntosP",
+				"puntosPalabra"
+			],
+			[
+				"nombre",
+				"nombreFisc"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"mr",
+				"margin-right"
+			],
+			[
+				"con",
+				"controllerURL"
+			],
+			[
+				"on",
+				"onLocationError"
+			],
+			[
+				"curr",
+				"currentRow"
+			],
+			[
+				"_c",
+				"_cellY"
+			],
+			[
+				"cu",
+				"currentRow"
+			],
+			[
+				"page",
+				"pageX"
+			],
+			[
+				"curren",
+				"currentColumn"
+			],
+			[
+				"medium",
+				"medium-6"
+			],
+			[
+				"tim",
+				"timeConverter"
+			],
+			[
+				"DATA",
+				"dataObj"
+			],
+			[
+				"tele",
+				"telefono2"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"sec",
+				"seconds"
+			],
+			[
+				"car",
+				"cardNo"
+			],
+			[
+				"fi",
+				"firstOpen"
+			],
+			[
+				"en",
+				"enableList"
+			],
+			[
+				"e",
+				"enabled"
+			],
+			[
+				"close",
+				"closePair"
+			],
+			[
+				"clo",
+				"closeAll"
+			],
+			[
+				"arr",
+				"arrL"
+			],
+			[
+				"FIN",
+				"finalGrid"
+			],
+			[
+				"fin",
+				"finalGrid"
+			],
+			[
+				"r",
+				"randomMinMax"
+			],
+			[
+				"dat",
+				"dataOn"
+			],
+			[
+				"se",
+				"selCards"
+			],
+			[
+				"q",
+				"qObj"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"top",
+				"getTop10"
+			],
+			[
+				"puntos",
+				"puntosTotales"
+			],
+			[
+				"susc",
+				"suscriptores"
+			],
+			[
+				"point",
+				"pointsShare"
+			],
+			[
+				"ge",
+				"getWeek"
+			],
+			[
+				"share",
+				"shareUpdateReturn"
+			],
+			[
+				"st",
+				"startProcUser"
+			],
+			[
+				"weekTSAc",
+				"weeksToTSAct"
+			],
+			[
+				"rou",
+				"routeProc"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"punto",
+				"puntosTrivia"
+			],
+			[
+				"obj",
+				"objPreg"
+			],
+			[
+				"preg",
+				"pregID"
+			],
+			[
+				"sort",
+				"sortObj"
+			],
+			[
+				"seman",
+				"semanaOn"
+			],
+			[
+				"poin",
+				"pointsPartido"
+			],
+			[
+				"p",
+				"pOn"
+			],
+			[
+				"time",
+				"timeO"
+			],
+			[
+				"val",
+				"val1"
+			],
+			[
+				"ti",
+				"tick"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"che",
+				"check"
+			],
+			[
+				"group",
+				"groupNot"
+			],
+			[
+				"es",
+				"estatus"
+			],
+			[
+				"tab",
+				"tabCards"
+			],
+			[
+				"cre",
+				"createExcel"
+			],
+			[
+				"ena",
+				"enabledB"
+			],
+			[
+				"ro",
+				"round"
+			],
+			[
+				"card",
+				"cardID"
+			],
+			[
+				"am",
+				"ampm"
+			],
+			[
+				"small-c",
+				"small-collapse"
+			],
+			[
+				"fecha",
+				"fechaP"
+			],
+			[
+				"log",
+				"logObj"
+			],
+			[
+				"meium",
+				"medium-6"
+			],
+			[
+				"background-c",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "www/js/controllers/ctrl_core.js",
+			"settings":
+			{
+				"buffer_size": 5228,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Z/web/AutoTips Backend/routes/api.js",
+			"settings":
+			{
+				"buffer_size": 38796,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "www/templates/views.html",
+			"settings":
+			{
+				"buffer_size": 19491,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "www/js/controllers/ctrl_descuento.js",
+			"settings":
+			{
+				"buffer_size": 1173,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "www/js/controllers/ctrl_listDesc.js",
+			"settings":
+			{
+				"buffer_size": 2653,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "www/css/main.css",
+			"settings":
+			{
+				"buffer_size": 12437,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "www/js/controllers/ctrl_descMayor.js",
+			"settings":
+			{
+				"buffer_size": 2749,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\n/* ---------------------------------------------------\n* Listado Descuentos\n*----------------------------------------------------*/\nrouter.post('/byMayorDesc', function(req, res) {\n\n    var qObj    = {};\n    var lat     =  parseFloat(req.body.lat);\n    var lng     =  parseFloat(req.body.lng);\n    var dist = 1;\n\n    console.log(lat,lng)\n    var collection = db.collection(\"sucursales\");\n    var criteria = {};\n\n    var retFields = {nombre:1,descuentos:1,_id:1,loc:1,direccion:1,colonia:1,delegacion:1,cp:1,telefono1:1,telefono2:1,estado:1};\n\n  collection.find({loc:{$near:[parseFloat(lat), parseFloat(lng)], $maxDistance:dist}},retFields).sort('_id').limit(100).toArray(function (err, items) {\n\n                for (var i =0; i< items.length; i++) {\n                    var start = {\n                      latitude: lat,\n                      longitude: lng\n                    };\n                    \n                    var end = {\n                      latitude: items[i].loc[0],\n                      longitude: items[i].loc[1]\n                    };\n                    var dist = haversine(start, end, {unit: 'km'});\n                    console.log(items[i].loc[0],items[i].loc[1],dist)\n                    items[i].dist = dist;\n                };\n       //items.sort(byProperty(\"descuentos.perc\"));        \n        res.json(items);\n        });\n});\n/* ---------------------------------------------------\n* Listado Descuentos\n*----------------------------------------------------*/\nrouter.post('/byListaDesc', function(req, res) {\n\n    var qObj    = {};\n    var spec = req.body.id\n\n    var collection = db.collection(\"sucursales\");\n    var criteria = {};\n\n     db.collection('sucursales').aggregate(\n             [\n               { $unwind: \"$descuentos\" },\n               { $match : { estRCD :'1' , descuentos: {$exists: true, $not: {$size: 0}}} },\n               { $group: { \"_id\":\"$descuentos.espec\", \"count\": { $sum: 1 } } },\n               {$sort : { _id: 1}},\n             ],function(err,result){\n                console.log(err,result)\n              res.json(result)\n            }) \n\n\n  /*var criteria = { estRCD : \"1\", descuentos: {$exists: true, $not: {$size: 0}}};\n\n      collection.find(criteria, function(err, result) {\n        res.json(result);\n    });\n*/\n});",
+			"settings":
+			{
+				"buffer_size": 2279,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "www/js/controllers/ctrl_especialidadR.js",
+			"settings":
+			{
+				"buffer_size": 1352,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "www/js/controllers/ctrl_especialidad.js",
+			"settings":
+			{
+				"buffer_size": 1633,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "www/js/controllers/mainController.js",
+			"settings":
+			{
+				"buffer_size": 3870,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 380.0,
+		"last_filter": "packa",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Comment"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Z/web/Autotips/www/css/style.css",
+		"/Z/web/GNODE 4.0/public/js/controllers/ctrl_base.js",
+		"/Z/web/GNODE 4.0/routes/user.js",
+		"/Z/web/GNODE 4.0/routes/node.js",
+		"/Z/web/GNODE 4.0/public/js/controllers/ctrl_app.js",
+		"/Z/web/GNODE 4.0/app.js",
+		"/Z/web/GNODE 4.0/public/views/core.html",
+		"/Z/web/BeerFRONT/public/js/controllers/ctrl_quiniela.js",
+		"/Z/web/GNODE 4.0/public/js/controllers/ctrl_node.js",
+		"/Z/web/GNODE 4.0/routes/api.js",
+		"/Z/web/GNODE 4.0/public/js/controllers/ctrl_signup.js",
+		"/D/Rodrigo/result (6).json",
+		"/D/Rodrigo/result (7).json",
+		"/D/Rodrigo/result (3).json",
+		"/D/Rodrigo/result (4).json",
+		"/D/Rodrigo/result (5).json",
+		"/C/Users/Rodrigo/AppData/Local/Temp/fz3temp-1/quiniela.html",
+		"/D/Rodrigo/result (2).json",
+		"/D/Rodrigo/result (1).json",
+		"/Z/web/Autotips/www/js/controllers/ctrl_descuento.js",
+		"/Z/web/Autotips/www/js/controllers/ctrl_especialidad.js",
+		"/Z/web/Autotips/www/js/controllers/ctrl_core.js",
+		"/Z/web/Autotips/www/js/controllers/ctrl_descMayor.js",
+		"/Z/web/Autotips/www/js/controllers/ctrl_home.js",
+		"/Z/web/Autotips/www/js/controllers/ctrl_listDesc.js",
+		"/Z/web/Autotips/www/index.html",
+		"/Z/web/Autotips/www/templates/views.html",
+		"/Z/web/Autotips/www/js/controllers/ctrl_especialidadR.js",
+		"/Z/web/AutoTips Backend/routes/api.js",
+		"/Z/web/sansceWeb/servicios.html",
+		"/Z/web/GNODE 4.0/routes/mainfunc.js",
+		"/Z/web/GNODE 4.0/routes/template.js",
+		"/Z/web/GNODE 4.0/routes/database.js",
+		"/Z/web/AutoTips Backend/app.js",
+		"/Z/web/sansceWeb/index.html",
+		"/Z/web/sansceWeb/quienes.html",
+		"/Z/web/BeerFRONT/public/views/quiniela.html",
+		"/Z/web/LEGALGN10/public/js/controllers/ctrl_panelAdmin.js",
+		"/Z/web/LEGALGN10/public/templates/controls.html",
+		"/Z/web/LEGALGN10/public/views/index.html",
+		"/Z/web/LEGALGN10/public/views/core.html",
+		"/Z/web/LEGALGN10/app.js",
+		"/Z/web/BeerFRONT/app.js",
+		"/Z/web/AutoTips Backend/public/views/index.html",
+		"/C/Users/Rodrigo/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/Z/web/sansceWeb/css/style.css",
+		"/Z/web/LEGALGN10/routes/api.js",
+		"/Z/web/BeerFRONT/routes/api.js",
+		"/Z/web/LEGALGN10/routes/models.js",
+		"/Z/web/NUCLEO URSULA/routes/api.js",
+		"/Z/web/LEGALGN10/public/js/controllers/ctrl_product.js",
+		"/C/Users/Rodrigo/Desktop/.htaccess",
+		"/Z/web/sansceWeb/actividades.html",
+		"/Z/web/sansceWeb/contacto.html",
+		"/Z/web/sansceWeb/textos.html",
+		"/Z/web/sansceWeb/15min.html",
+		"/Z/web/sansceWeb/terminos.html",
+		"/Z/web/LEGALGN10/package.json",
+		"/Z/web/sansceWeb/testimoniales.html",
+		"/Z/web/sansceWeb/productos.html",
+		"/C/Users/Rodrigo/AppData/Local/Temp/fz3temp-2/.htaccess",
+		"/Z/web/AutoTips Backend/public/js/controllers/ctrl_alta.js",
+		"/Z/web/Autotips Web/js/controllers/ctrl_validar.js",
+		"/Z/web/AutoTips Backend/public/js/controllers/ctrl_card.js",
+		"/Z/web/AutoTips Backend/public/js/utilities/utilities.js",
+		"/Z/web/AutoTips Backend/public/css/style.css",
+		"/Z/web/Autotips/www/js/controllers/ctrl_mapa.js",
+		"/Z/web/porcomida/public/javascripts/administrador.js",
+		"/Z/web/porcomida/public/javascripts/restaurantes.js",
+		"/Z/web/AutoTips Backend/public/templates/controls.html",
+		"/Z/web/AutoTips Backend/public/views/core.html",
+		"/C/Users/Rodrigo/AppData/Local/Temp/fz3temp-1/trivia.html",
+		"/Z/web/Autotips/www/css/main.css",
+		"/Z/web/Autotips/www/js/controllers/ctrl_info.js",
+		"/Z/web/Autotips/www/js/controllers/ctr_mapa.js",
+		"/Z/web/Autotips/www/js/controllers/ctr_mapaSuc.js",
+		"/Z/web/porcomida/public/javascripts/main2.js",
+		"/Z/web/porcomida/public/javascripts/main.js",
+		"/Z/web/porcomida/public/javascripts/backend.js",
+		"/Z/web/porcomida/public/javascripts/autoNumeric.js",
+		"/Z/web/AutoTips Backend/public/js/controllers/ctrl_sucursal.js",
+		"/Z/web/AutoTips Backend/public/js/controllers/ctrl_prealta.js",
+		"/Z/web/BeerFRONT/public/js/controllers/ctrl_memorama.js",
+		"/Z/web/BeerFRONT/public/views/memorama.html",
+		"/Z/web/BeerFRONT/public/css/style.css",
+		"/Z/web/BeerFactoryBACK/routes/api.js",
+		"/Z/web/BeerFRONT/public/views/registro.html",
+		"/Z/web/BeerFRONT/public/js/controllers/mainController.js",
+		"/Z/web/BeerFRONT/public/js/controllers/ctrl_registro.js",
+		"/Z/web/GNODE 4.0/public/js/controllers/ctrl_core.js",
+		"/Z/web/GNODE 4.0/public/js/controllers/ctrl_login.js",
+		"/Z/web/GNODE 4.0/public/js/controllers/ctrl_user.js",
+		"/Z/web/GNODE 4.0/public/views/signup.html",
+		"/Z/web/GNODE 4.0/public/views/login.html",
+		"/Z/web/GNODE 4.0/public/js/app.js",
+		"/Z/web/GNODE 4.0/public/js/controllers/mainController.js",
+		"/C/Users/Rodrigo/Desktop/style.css",
+		"/Z/web/BeerFRONT/public/js/controllers/ctrl_userProfile.js",
+		"/Z/web/GNODE 4.0/public/css/style.css",
+		"/C/Users/Rodrigo/Desktop/files/NODE FROM SERVER/nodes/login.html",
+		"/Z/web/GNODE 4.0/routes/index.js",
+		"/Z/web/LAZO/LAZOWEB/public/js/controllers/ctrl_login.js",
+		"/Z/web/GNODE 4.0/public/js/controllers/ctrl_footer.js",
+		"/C/Users/Rodrigo/Desktop/PRE_010010_FORMATO_JAL_2015.png",
+		"/Z/web/BeerFRONT/public/js/controllers/ctrl_userFace.js",
+		"/Z/web/GNODE 4.0/public/js/controllers/ctrl_iFacebook.js",
+		"/C/Users/Rodrigo/AppData/Local/Temp/fz3temp-1/index.html",
+		"/C/Users/Rodrigo/AppData/Local/Temp/fz3temp-1/index 2.html",
+		"/Z/web/LAZO/LAZOWEB/public/js/controllers/mainController.js",
+		"/Z/web/GNODE 4.0/public/js/utilities/utilities.js",
+		"/Z/web/gnode/app.js",
+		"/D/Docs/Administracion/Facturas Elec/Fobos/AAA1064E-C54A-4859-9C52-C90B9ACC199E.xml",
+		"/C/Users/Rodrigo/Desktop/files/NODE FROM SERVER/nodes/js/controllers/nodeController.js",
+		"/Z/web/gnode/routes/database.js",
+		"/Z/web/GNODE 4.0/package.json",
+		"/Z/web/PAM TEMP/index.html",
+		"/Z/web/PAM TEMP/main.html",
+		"/Z/web/Autotips/www/js/controllers/ctrl_registro.js",
+		"/Z/web/Autotips/www/js/controllers/ctrl_user.js",
+		"/Z/web/Autotips/www/js/controllers/ctrl_loginS.js",
+		"/Z/web/Autotips/www/js/controllers/mainController.js",
+		"/Z/web/Autotips/www/js/utilities/utilities.js",
+		"/Z/web/Autotips/config.xml",
+		"/Z/web/BeerFRONT/public/views/puntos.html",
+		"/D/Rodrigo/AAA1522A-9C77-4679-AA08-92123D39D314.xml",
+		"/C/Users/Rodrigo/AppData/Local/Temp/fz3temp-1/config.inc",
+		"/C/Users/Rodrigo/AppData/Local/Temp/fz3temp-1/readPreview.php",
+		"/C/Users/Rodrigo/AppData/Local/Temp/fz3temp-1/config 3.inc"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			");\n",
+			"listMayor",
+			"byMayor",
+			"0",
+			"byMayor",
+			"\");\n",
+			"descuentoT",
+			"descuento",
+			"descuentoT",
+			"getData",
+			"pred",
+			"em",
+			"Interna",
+			")</",
+			"download",
+			"url",
+			"NUCLEO",
+			"mongo",
+			"top",
+			"top10",
+			"NUCLEO",
+			"query",
+			"proyect",
+			"productos",
+			" +'",
+			"end",
+			"drag",
+			"myMap",
+			"ubica",
+			"mapa",
+			"infoGen",
+			"direcc",
+			"altaView",
+			")\n",
+			"alta",
+			"btnEd",
+			"btEd",
+			"btEnd",
+			">\n",
+			"readBranch",
+			"main",
+			"user",
+			"nodeId",
+			"suscriptores",
+			"session",
+			"alert",
+			"alertCont",
+			"alert",
+			"animar",
+			"footer",
+			"fotter",
+			"body",
+			"footer",
+			"fotter",
+			"loginOp",
+			" </",
+			"core",
+			"databa",
+			"createUser",
+			"login",
+			"tar",
+			"number_10",
+			"required",
+			"cardView",
+			"card",
+			"console.",
+			"weekS",
+			"week",
+			"startProcUser",
+			"procUser",
+			"puntosUser",
+			"puntos",
+			"ctrl_sopa",
+			"nat",
+			"etiqueta",
+			"mx",
+			"alta",
+			"altaList",
+			"altaLsi",
+			"formLabel",
+			"template",
+			"tempalte",
+			"ctrl_user",
+			"ctrl_me",
+			"morel",
+			"proxi",
+			"alta",
+			"right",
+			"letras",
+			"procUser",
+			"proc",
+			"empty",
+			")	",
+			"word",
+			"updateLe",
+			"getCards",
+			"initMemo",
+			"memoramaReturn",
+			"ctrl_ltras",
+			"getMemorama",
+			"ctrl_mem",
+			"cards",
+			"orden",
+			"update",
+			"memorama",
+			"especia",
+			"info",
+			"infoS",
+			"mayor",
+			">\n",
+			"getSuc",
+			"mayor",
+			"zonas",
+			"espec",
+			"especiali",
+			"zonas",
+			"retFie",
+			"retFil",
+			"ret",
+			"byProp",
+			"sort",
+			"byProp",
+			"nSuc",
+			"mayor",
+			"dist",
+			"mayor",
+			"dist",
+			"mayor"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": false,
+		"replace_history":
+		[
+			"on-tap",
+			"fade",
+			"translate3d(100%,0,0)",
+			"translate3d(0,0,0)",
+			"translate3d(-100%,0,0)",
+			"push",
+			"slide",
+			"strong",
+			"ul",
+			"En cumplimiento a lo previsto en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (en lo sucesivo “Ley”), nos permitimos informarle lo siguiente:\n\n ",
+			"rest",
+			"Back",
+			"Logo",
+			"id",
+			"cupName",
+			"platName",
+			"horariosC",
+			"fa-question-circle",
+			"objTo.rs",
+			"objTo",
+			"Back",
+			"Su restaurante cuenta con servicio a domicilio?",
+			"dashmain",
+			"strong",
+			"p",
+			"div",
+			"p",
+			"b",
+			"div",
+			"IMSS",
+			"Verdana",
+			"'Oxygen', sans-serif;",
+			"bussines",
+			"porcomidafontthin",
+			"Lato",
+			"Verdana",
+			"",
+			"MARCA",
+			"\"\"",
+			"",
+			"\"\"",
+			",",
+			"EMPRESA",
+			"",
+			"\"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "www/js/controllers/ctrl_core.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4054,
+								4054
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1344.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Z/web/AutoTips Backend/routes/api.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38796,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11415,
+								11415
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4821.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "www/templates/views.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19491,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11444,
+								11444
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4455.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "www/js/controllers/ctrl_descuento.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1166,
+								1166
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "www/js/controllers/ctrl_listDesc.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1404,
+								1404
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 279.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "www/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1401,
+								1401
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "www/js/controllers/ctrl_descMayor.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1490,
+								1520
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 462.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1352,
+								187
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "www/js/controllers/ctrl_especialidadR.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "www/js/controllers/ctrl_especialidad.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1525,
+								1525
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "www/js/controllers/mainController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1301,
+								1301
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 44.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.397123893805,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sub.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Z:\\web\\LAZOAPP\\LAZOAPP.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 112.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AUTOTIPS</title>
+<!-- CSS -->
+<link rel="stylesheet" href="css/foundation.min.css">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+<link rel="stylesheet" href="css/main.css">
+<link rel='stylesheet' href='css/jquery.mobile.simultaneous-transitions-replace.css'/>
+
+<!-- JS -->
+<script src="js/lib/iscroll.js"></script>
+
+<script src="js/lib/jquery-1.11.2.min.js"></script>
+<script src="js/lib/jquery.mobile.simultaneous-transitions-replace.js"></script>
+<script src="js/lib/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/lib/jquery.animate-colors-min.js"></script>
+
+
+<script src="js/lib/foundation/foundation.js"></script>
+<script src="js/lib/ractive.js"></script>
+
+<script src="js/lib/ractive-events-keys.js"></script>
+<script src="js/lib/ractive-events-tap.js"></script>
+<script src="js/lib/tappy.js"></script>
+
+<script src='js/utilities/utilities.js'></script>
+
+
+<!-- CONTROLLERS -->
+<script src="js/controllers/ctrl_core.js"></script>     <!-- ROUTE CONTROLLER -->
+<script src="js/controllers/mainController.js"></script>  <!-- FOUNDATION &  DB CONTROLLER -->
+<script src="js/controllers/ctrl_main2.js"></script>   <!-- START CORDOVA CONTROLLER -->
+<script src="js/controllers/ctrl_loginS.js"></script>   <!-- START CORDOVA CONTROLLER -->
+
+
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3&libraries=places&sensor=true&key=AIzaSyBcrQxNRRRn5djIHjj5fXV7TP8dLz0WqN8'></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta charset="UTF-8">
+
+
+
+</head>
+  <body>
+
+
+
+<div id="container">
+<!-- ********************************************************************* -->
+<div data-role="page" id="initialBlank"></div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="firstP">
+
+   
+        <div id="logoHeader">
+        <img src="img/logo.png">
+        </div>
+
+    <div role="main" id="firstPCont" class="ui-content"></div><!-- /content -->
+
+    <div id="homeImgDiv"><img src="img/grecas1.png"></div>
+</div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="login">
+     <div data-role="header" data-position="fixed">
+        <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        <h1>Ingresar</h1>
+    </div>
+
+     <div role="main" id="loginP" class="ui-content"></div><!-- /content -->
+
+     <div id="loginImgDiv"><img src="img/cocheLogin.png"></div>
+</div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="registro">
+     <div data-role="header" data-position="fixed">
+        <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        <h1>Registro</h1>
+    </div>
+
+    <div role="main" id="registroP" class="ui-content"></div><!-- /content -->
+
+</div>
+
+<!-- ********************************************************************* -->
+<div data-role="page" id="registroUser">
+     <div data-role="header" data-position="fixed">
+        <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        <h1>Registro</h1>
+    </div>
+
+    <div role="main" id="registroP" class="ui-content"></div><!-- /content -->
+
+</div>
+
+<!-- ********************************************************************* -->
+<div data-role="page" id="recuperar">
+       <div data-role="header" data-position="fixed">
+    <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+    <h1>Recuperar</h1>
+    </div>
+
+     <div role="main" id="recuperarP" class="ui-content"></div><!-- /content -->
+
+
+</div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="recuperarListo">
+    <div data-role="header" data-position="fixed">
+    <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+    <h1>Enviado</h1>
+    </div>
+
+    <div  role="main" class="ui-content">
+    <div class="title">Se ha enviado un correo con tu datos</div>
+      <a href="#firstP" class="btnNaranja ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Regresar a principal</a>
+    </div>
+</div>
+
+
+<div data-role="page" id="mainScreen">
+  
+</div>
+<!-- MAIN LIST ********************************************************************* -->
+
+
+<div data-role="page" id="list">
+    <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div class="titleList">Sucursales</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+
+     <div role="main" id="listPCont" class=""></div><!-- /content -->
+</div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="especialidadR">
+      
+    <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Especialidades</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+
+    <div role="main" id="especialidadRP" class="ui-content"></div><!-- /content -->
+
+</div>
+
+<div data-role="page" id="especialidad">
+      
+    <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Sub -Especialidad</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+
+    <div role="main" id="especialidadP" class="ui-content"></div><!-- /content -->
+
+</div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="zona">
+    
+    <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Estados</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+
+    <div role="main" id="zonaP" class="ui-content"></div><!-- /content -->
+
+</div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="delegacion">
+
+    <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Delegación</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+    <div role="main" id="delegacionP" class="ui-content"></div><!-- /content -->
+
+</div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="descuentos">
+      <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Descuentos</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+     <div role="main" id="descuentosP" class=""></div><!-- /content -->
+
+</div>
+<!-- LISTADO DE DESCUENTOS ********************************************************************* -->
+<div data-role="page" id="listDesc">
+     <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Listado Descuentos</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+     <div role="main" id="listDescP" class=""></div><!-- /content -->
+
+</div>
+
+<!-- LISTADO DE DESCUENTOS ********************************************************************* -->
+<div data-role="page" id="descMayor">
+     <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Mayor Porcentaje</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+     <div role="main" id="listMayorP" class=""></div><!-- /content -->
+
+</div>
+
+
+<!-- DESCUENTOS POR PORCENTAJE ********************************************************************* -->
+<div data-role="page" id="porcDesc">
+     <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Descuentos por porcentaje</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+     <div role="main" id="porcDescP" class=""></div><!-- /content -->
+
+</div>
+<!-- DESCUENTOS POR ESPECIALIDAD *********************************** -->
+<div data-role="page" id="especDesc">
+     <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Descuentos por especialidad</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+     <div role="main" id="especDescP" class=""></div><!-- /content -->
+
+</div>
+
+<!-- DESCUENTOS POR ESPECIALIDAD *********************************** -->
+<div data-role="page" id="zonaDesc">
+     <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Descuentos por Zona</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+     <div role="main" id="zonaDescP" class=""></div><!-- /content -->
+
+</div>
+
+<!-- ********************************************************************* -->
+<div data-role="page" id="calificacion"></div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="mapa">
+    <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Ubicación Sucursal</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+     <div role="main" id="mapaP" class=""></div><!-- /content -->
+</div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="mapaSuc"></div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="infoSuc">
+  <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Información Sucursal</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+
+     <div role="main" id="infoSucP" class="ui-content"></div><!-- /content -->
+</div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="contacto">
+       <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Contacto</div>
+         </div>
+         <div class="small-2 column rPad">
+            <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>
+        </div>   
+    </div>
+
+    <div role="main" id="contactoP" class="ui-content"></div><!-- /content -->
+</div>
+<!-- ********************************************************************* -->
+
+<div data-role="page" id="contactoListo">
+	  <div data-role="header" data-position="fixed">
+    <h1>Enviado</h1>
+    </div>
+
+    <div  role="main" class="ui-content">
+    <div class="title">Se ha enviado un correo con tus comentarios. Te contestaremos a la brevedad.</div>
+    	<a href="#mainScreen" class="btnNaranja ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Regresar a principal</a>
+    </div>
+</div>
+
+
+</div> <!-- END CONTAINER -->
+
+
+<div id="templateLoader" style="display:none"></div>
+<div class="ui-loader-background"> </div>
+
+<div data-role="popup" data-transition="pop" id="pop1" data-overlay-theme="b" data-theme="a" data-dismissible="false">
+    <div data-role="header" data-theme="a" class="ui-corner-top ui-header ui-bar-a" role="banner">
+                <h1 id="pop_Title" class="ui-title" role="heading" aria-level="1"></h1>
+            </div>
+    <div role="main" class="ui-content">
+    <p id="pop_text"></p>
+        <a href="#" class="ui-btn ui-corner-all ui-btn-b ui-btn-icon-left ui-icon-check" data-rel="back" data-transition="pop">Aceptar</a>
+    </div>
+</div>
+
+
+
+  </body>
+</html>

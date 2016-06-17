@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C4U</title>
+<!--<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">  -->
+<!-- CSS -->
+<link rel="stylesheet" href="css/foundation.min.css">
+<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+<link rel="stylesheet" href="css/main.css">
+<link rel='stylesheet' href='css/jquery.mobile.simultaneous-transitions-replace.css'/>
+
+<!-- JS -->
+<script src="js/lib/iscroll.js"></script>
+<script src="cordova.js"></script>
+
+<script src="js/lib/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+   $(document).bind("mobileinit", function(){
+     $.mobile.hashListeningEnabled = false;
+   });
+</script>
+<script src="js/lib/jquery.mobile.simultaneous-transitions-replace.js"></script>
+<script src="js/lib/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/lib/jquery.animate-colors-min.js"></script>
+
+
+<script src="js/lib/foundation/foundation.js"></script>
+<script src="js/lib/ractive.js"></script>
+
+
+<script src="js/lib/ractive-events-keys.js"></script>
+<script src="js/lib/ractive-events-tap.js"></script>
+<script src="js/lib/ractive-events-hover.js"></script>
+<script src="js/lib/jquery.inputmask.bundle.js"></script>
+
+<script src="js/lib/tappy.js"></script>
+<script src="js/lib/jquery.maskedinput-1.4.min.js"></script>
+
+<script src='js/utilities/utilities.js'></script>
+
+<!-- CONTROLLERS -->
+<script src="js/controllers/ctrl_core.js"></script>     <!-- ROUTE CONTROLLER -->
+<script src="js/controllers/mainController.js"></script>  <!-- FOUNDATION &  DB CONTROLLER -->
+<script src="js/controllers/ctrl_main.js"></script>   <!-- START CORDOVA CONTROLLER -->
+<script src="js/controllers/ctrl_loginS.js"></script>   <!-- START CORDOVA CONTROLLER -->
+
+
+
+
+<script src='https://maps.googleapis.com/maps/api/js?sensor=false&v=3&libraries=places&key=AIzaSyBcrQxNRRRn5djIHjj5fXV7TP8dLz0WqN8'></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=yes" />
+<meta name="msapplication-tap-highlight" content="no" />
+
+
+</head>
+  <body>
+
+
+
+<div id="container">
+<!-- ********************************************************************* -->
+<div data-role="page" id="initialBlank"></div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="firstP">
+
+        <div id="logoHeader">
+        <img src="img/logopromo.png">
+        </div>
+
+    <div role="main" id="firstPCont" class="ui-content"></div><!-- /content -->
+
+</div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="login">
+  
+    <div id="loginImgDiv"><img src="img/logopromo.png"></div>
+
+     <div role="main" id="loginP" class="ui-content"></div><!-- /content -->
+
+      <div class="plecasBot">
+          <img src="img/barrasbot.png" style="width:100%;">
+    </div>
+     
+</div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="regVenta">
+    <div data-role="header" data-position="fixed">
+
+      <a href="#add-form"  class="gearIco ui-btn-right whiteB" data-iconpos="notext"><i class="fa fa-user  fa-2x" aria-hidden="true"></i></a>
+
+      <div class="small-2 column rPad">
+         <!--   <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div> -->
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Registrar Venta</div>
+         </div>
+         <div class="small-2 column rPad">
+           <!-- <div class="hButton"  data-direction="reverse"><img src="img/home.png"></div>  -->
+        </div>   
+    </div>
+
+
+    <div role="main" id="registroP" class="ui-content"></div><!-- /content -->
+
+
+    <div data-role="footer" data-position="fixed" style="position:fixed;bottom:0;">
+       <div data-role="navbar">
+        <ul>
+            <li class="active"><a  class="ui-btn-active" href="#"><div class="imgMenu"><img  class="imgSize" src="img/ico1.png"></div><div class="wordMenu"> Registrar</div></a></li>
+            <li><a href="#listadoVentas"><div class="imgMenu"><img  class="imgSize" src="img/ico2.png"></div><div class="wordMenu"> Histórico</div></a></li>
+            <li><a href="#listadoInventario"><div class="imgMenu"><img  class="imgSize" src="img/ico3.png"></div><div class="wordMenu"> Inventario</div></a></li>
+        </ul>
+    </div><!-- /navbar -->
+</div>
+
+</div>
+
+<!-- getVentas ********************************************************************* -->
+<div data-role="page" id="listadoVentas">
+     <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Ventas</div>
+         </div>
+     
+    </div>
+     <div role="main" id="listadoVentaP" class=""></div><!-- /content -->
+
+</div>
+
+
+
+
+<!-- Listado inventario  ********************************************************************* -->
+<div data-role="page" id="listadoInventario">
+     <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Inventario</div>
+         </div>
+      
+    </div>
+     <div role="main" id="listadoInventarioP" class=""></div><!-- /content -->
+
+</div>
+
+<!-- ********************************************************************* -->
+<div data-role="page" id="recuperar">
+       <div data-role="header" data-position="fixed">
+    <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+    <h1>Recuperar</h1>
+    </div>
+
+     <div role="main" id="recuperarP" class="ui-content"></div><!-- /content -->
+
+
+</div>
+<!-- ********************************************************************* -->
+<div data-role="page" id="recuperarListo">
+    <div data-role="header" data-position="fixed">
+    <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+    <h1>Enviado</h1>
+    </div>
+
+    <div  role="main" class="ui-content">
+    <div class="title">Se ha enviado un correo con tu datos</div>
+      <a href="#firstP" class="btnNaranja ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Regresar a principal</a>
+    </div>
+</div>
+
+
+<div data-role="page" id="mainScreen">
+  
+</div>
+<!-- MAIN LIST ********************************************************************* -->
+
+
+<div data-role="page" id="list">
+    <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div class="titleList">Sucursales</div>
+         </div>
+        
+    </div>
+
+     <div role="main" id="listPCont" class=""></div><!-- /content -->
+</div>
+<
+
+
+
+
+
+<div data-role="page" id="infoVenta">
+  <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Detalle operación</div>
+         </div>
+        
+    </div>
+
+     <div role="main" id="infoVentaP" class="ui-content"></div><!-- /content -->
+</div>
+
+<div data-role="page" id="infoInventario">
+  <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Detalle Inventario</div>
+         </div>
+        
+    </div>
+
+     <div role="main" id="infoInventarioP" class="ui-content"></div><!-- /content -->
+</div>
+
+
+
+
+<!-- PRIVACIDAD ********************************************************************* -->
+<div data-role="page" id="aviso">
+     <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Aviso de Privacidad</div>
+         </div>
+     
+    </div>
+     <div role="main" id="avisoP" class=""></div><!-- /content -->
+
+</div>
+
+<!-- getVentas ********************************************************************* -->
+<div data-role="page" id="terminos">
+     <div data-role="header" data-position="fixed">
+      <div class="small-2 column rPad">
+            <div class="bButton"  data-direction="reverse"><img src="img/backArrow.png"></div>
+        </div>
+         <div class="small-8 column rPad">
+              <div id="titleList" class="titleList">Terminos de Uso</div>
+         </div>
+        
+    </div>
+     <div role="main" id="terminosP" class=""></div><!-- /content -->
+
+</div>
+
+
+
+
+<div id="templateLoader" style="display:none"></div>
+<div class="ui-loader-background"> </div>
+
+<div data-role="popup" data-transition="pop" id="pop1" data-overlay-theme="b" data-theme="a" data-dismissible="false">
+    <div data-role="header" data-theme="a" class="ui-corner-top ui-header ui-bar-a" role="banner">
+                <h1 id="pop_Title" class="ui-title" role="heading" aria-level="1"></h1>
+            </div>
+    <div role="main" class="ui-content">
+    <p id="pop_text"></p>
+        <a href="#" class="ui-btn ui-corner-all ui-btn-b ui-btn-icon-left ui-icon-check" data-rel="back" data-transition="pop">Aceptar</a>
+    </div>
+</div>
+
+
+
+  </body>
+</html>
