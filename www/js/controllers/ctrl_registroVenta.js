@@ -148,6 +148,8 @@ var ctrl_registroVenta = {
 		return suma;
 	},
 	getPosRet : function(position){
+		console.log("position")
+		console.log(position)
 		ctrl_registroVenta.create(position)
 	},
 	getPosErr : function(){
@@ -177,7 +179,7 @@ var ctrl_registroVenta = {
 
     	
 	},
-	create:function( ){
+	create:function(position){
 		jqm.showLoader("registrando venta...");
 		// Client Obj
 		var item = {	ts 			: utils.generateTS(),
@@ -192,7 +194,7 @@ var ctrl_registroVenta = {
 		params.dataB.userID =  window.localStorage.getItem("userId");
     	params.dataB.username = window.localStorage.getItem("username");
 		params.dataB.estRCD = 1;
-		dbC.query("/api/createVenta","POST",params,ctrl_registroVenta.create_Return)
+		dbC.query("/api/createVenta","POST",params,ctrl_registroVenta.create_Return,ctrl_registroVenta.create_Error)
 	},
 	create_Return : function(response){
 		console.log(response)
@@ -205,6 +207,9 @@ var ctrl_registroVenta = {
 		ctrl_registroVenta.mainObj.set('unidades',ctrl_registroVenta.unidades);
 
 		jqm.popup( {text:"Venta registrada con éxito",title:"Venta"})
+	},
+	create_Error : function(err){
+		console.log(err)
 	},
 	getExternal : function(extra){
 
