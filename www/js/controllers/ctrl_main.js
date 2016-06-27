@@ -43,6 +43,9 @@ function initApp(){
 
    		mainC.init(ctrl_core.init)
 
+      document.addEventListener("showkeyboard", function(){ $("[data-role=footer]").hide();}, false);
+document.addEventListener("hidekeyboard", function(){ $("[data-role=footer]").show();}, false);
+
 
   $('.bButton').bind( "tap",function(){
       
@@ -199,3 +202,5 @@ function onSuccess(location){
 function onError(e){
   
 }
+
+
