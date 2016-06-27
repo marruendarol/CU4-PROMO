@@ -69,7 +69,7 @@ var wPos = {
   timeout             : 5000,
   maxDistance         : .05,
   timeVar             : "",
-  refreshTime         : 900000,
+  refreshTime         : 600000,
   callback            : "",
   lastLat             : null,
   lastLng             : null,
@@ -95,7 +95,7 @@ var wPos = {
 
     var lat = position.coords.latitude;
     var lng = position.coords.longitude;
-    var ts  = position.timestamp; 
+    var ts  = utils.generateTS();
 
         if(wPos.lastLat!=null){
            var dist =  wPos.gps_distance(wPos.lastLat,
