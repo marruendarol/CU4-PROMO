@@ -43,9 +43,17 @@ function initApp(){
 
    		mainC.init(ctrl_core.init)
 
-      document.addEventListener("showkeyboard", function(){ $("[data-role=footer]").hide();}, false);
-document.addEventListener("hidekeyboard", function(){ $("[data-role=footer]").show();}, false);
 
+
+$(document).on('focus', 'input, textarea', function() 
+{
+  $.mobile.activePage.find("div[data-role='footer']").hide();
+});
+
+$(document).on('blur', 'input, textarea', function() 
+{
+  $.mobile.activePage.find("div[data-role='footer']").show();
+});
 
   $('.bButton').bind( "tap",function(){
       
