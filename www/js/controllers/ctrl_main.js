@@ -68,7 +68,7 @@ $(document).on('blur', 'input, textarea', function()
       $.mobile.changePage("#mainScreen")
   })
 
-
+  cordova.plugins.backgroundMode.enable();
 
   wPos.startWP();
 }
