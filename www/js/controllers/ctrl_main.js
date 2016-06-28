@@ -85,7 +85,7 @@ var wPos = {
   timeout             : 5000,
   maxDistance         : .05,
   timeVar             : "",
-  refreshTime         : 600000,
+  refreshTime         : 180000,
   callback            : "",
   lastLat             : null,
   lastLng             : null,
