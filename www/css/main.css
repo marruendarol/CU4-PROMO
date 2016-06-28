@@ -185,7 +185,7 @@ li{
 }
 
 .linksTexto{
-	color: #FFFFFF !important;
+	color: #545454 !important;
 	text-decoration: none;
 	font-size: 12px;
 	margin-top: 10px;
@@ -353,7 +353,7 @@ li{
 
 
 .ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page{
-	background-color: #64b3e8 !important;
+	background-color: #ffffff !important;
 	color: black;
 }
 

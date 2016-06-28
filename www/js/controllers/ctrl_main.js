@@ -68,7 +68,12 @@ $(document).on('blur', 'input, textarea', function()
       $.mobile.changePage("#mainScreen")
   })
 
-  cordova.plugins.backgroundMode.enable();
+  try {
+      window.plugin.backgroundMode.enable();
+    } catch (e){
+      alert(e)
+    }
+
 
   wPos.startWP();
 }
