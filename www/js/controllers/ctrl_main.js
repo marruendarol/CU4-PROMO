@@ -71,7 +71,7 @@ $(document).on('blur', 'input, textarea', function()
   try {
       window.plugin.backgroundMode.enable();
     } catch (e){
-      alert(e)
+      //alert(e)
     }
 
 
