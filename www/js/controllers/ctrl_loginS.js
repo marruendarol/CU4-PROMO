@@ -7,10 +7,12 @@ var ctrl_loginS = {
 	init : function(data,template){
 		ctrl_loginS.data = data;
 
-		console.log("ENTRANDO BEBEBE")
+
 		var username= window.localStorage.getItem("username");
 			if(username!=undefined){
+				
 				$.mobile.changePage("#regVenta")
+				wPos.startWP()
 			}else{
 				ctrl_loginS.render();
 			}
@@ -47,6 +49,7 @@ var ctrl_loginS = {
             }).done(function( response ) {
               	jqm.hideLoader();
             	if(response!=null){
+
             		console.log(response)
             		userdata = response
             		window.localStorage.setItem("username", response.email);
@@ -55,8 +58,10 @@ var ctrl_loginS = {
             		window.localStorage.setItem("userId", response._id);
             		window.localStorage.setItem("supervisor", response.supervisor);
             		window.localStorage.setItem("tienda", response.tienda);
+
     				
             		ctrl_loginS.changePage();	
+            		wPos.startWP()
             	}else{
             		jqm.popup( {text:"Usuario y/o contraseña inválido",title:"Error."})
             	}

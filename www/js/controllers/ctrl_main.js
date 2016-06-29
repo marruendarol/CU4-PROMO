@@ -69,23 +69,24 @@ $(document).on('blur', 'input, textarea', function()
   })
 
   try {
+      window.plugin.backgroundMode.setDefaults({text:"Trabajando en segundo plano", resume: false});
       window.plugin.backgroundMode.enable();
     } catch (e){
       //alert(e)
     }
 
 
-  wPos.startWP();
+  
 }
 
 
 var wPos = {
   
-  maximumAge          : 3000,  // cache for 
+  maximumAge          : 300000,  // cache for 
   timeout             : 5000,
   maxDistance         : .05,
   timeVar             : "",
-  refreshTime         : 180000,
+  refreshTime         : 60000,
   callback            : "",
   lastLat             : null,
   lastLng             : null,
@@ -93,11 +94,10 @@ var wPos = {
 
   startWP : function(callback){
       wPos.callback = callback;
-      wPos.getWp();
-
       wPos.setInt = setInterval(wPos.getWp,wPos.refreshTime);
   },
   stopWP : function(){
+    wPos.getWp();
     wPos.setInt.stopInterval();
   },
   getWp : function(){
@@ -112,6 +112,7 @@ var wPos = {
     var lat = position.coords.latitude;
     var lng = position.coords.longitude;
     var ts  = utils.generateTS();
+
 
         if(wPos.lastLat!=null){
            var dist =  wPos.gps_distance(wPos.lastLat,
