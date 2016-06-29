@@ -87,8 +87,8 @@ var bPos = {
         desiredAccuracy: 10,
         stationaryRadius: 50,
         distanceFilter: 50,
-        notificationTitle : "C4U Promo"
-        notificationText : "Activa"
+        notificationTitle : "C4U Promo",
+        notificationText : "Activa",
         debug: false, // <-- enable this hear sounds for background-geolocation life-cycle.
         stopOnTerminate: false, // <-- enable this to clear background location settings when the app terminates
         interval : 60000
