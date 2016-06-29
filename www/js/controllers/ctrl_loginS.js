@@ -12,7 +12,8 @@ var ctrl_loginS = {
 			if(username!=undefined){
 				
 				$.mobile.changePage("#regVenta")
-				wPos.startWP()
+				bPos.init();
+				//wPos.startWP()
 			}else{
 				ctrl_loginS.render();
 			}
@@ -61,7 +62,8 @@ var ctrl_loginS = {
 
     				
             		ctrl_loginS.changePage();	
-            		wPos.startWP()
+            		//wPos.startWP()
+            		bPos.init();
             	}else{
             		jqm.popup( {text:"Usuario y/o contraseña inválido",title:"Error."})
             	}

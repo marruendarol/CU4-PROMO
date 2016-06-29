@@ -80,6 +80,46 @@ $(document).on('blur', 'input, textarea', function()
 }
 
 
+var bPos = {
+  init : function(){
+
+      backgroundGeolocation.configure(bPos.callbackFn, bPos.failureFn, {
+        desiredAccuracy: 10,
+        stationaryRadius: 50,
+        distanceFilter: 50,
+        debug: true, // <-- enable this hear sounds for background-geolocation life-cycle.
+        stopOnTerminate: false, // <-- enable this to clear background location settings when the app terminates
+        interval : 60000
+    });
+
+      backgroundGeolocation.start();
+
+  },
+  failureFn : function(error) {
+        console.log('BackgroundGeolocation error');
+  },
+  callbackFn : function(location) {
+        console.log('[js] BackgroundGeolocation callback:  ' + location.latitude + ',' + location.longitude);
+
+        var item = {  ts      : utils.generateTS(),
+                  id      : utils.generateUUID()};
+
+
+        var params = {}
+        params.dataB = location;
+        params.dataB.userId = window.localStorage.getItem("userId")
+        params.dataB.username = window.localStorage.getItem("username")
+        params.dataB.clients = [item];
+        params.dataB.estRCD = 1;
+        dbC.query("/api/createPosition","POST",params,null)
+       
+        backgroundGeolocation.finish();
+  }
+
+
+}
+
+
 var wPos = {
   
   maximumAge          : 300000,  // cache for 
