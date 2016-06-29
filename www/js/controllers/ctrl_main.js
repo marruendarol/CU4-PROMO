@@ -69,8 +69,8 @@ $(document).on('blur', 'input, textarea', function()
   })
 
   try {
-      window.plugin.backgroundMode.setDefaults({text:"Trabajando en segundo plano", resume: false});
-      window.plugin.backgroundMode.enable();
+      //window.plugin.backgroundMode.setDefaults({text:"Trabajando en segundo plano", resume: false});
+      //window.plugin.backgroundMode.enable();
     } catch (e){
       //alert(e)
     }
