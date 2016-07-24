@@ -99,6 +99,11 @@ var ctrl_core = {
 	    	ctrl_core.loadController("./js/controllers/ctrl_listadoInventario.js",params);
 	    });
 
+	     $(document).on("pagebeforeshow","#corteInventario", function() {
+	      	var params = { init : 'ctrl_corteI.init' }
+	    	ctrl_core.loadController("./js/controllers/ctrl_corteInventario.js",params);
+	    });
+
 	       $(document).on("pagebeforeshow","#infoInventario", function() {
 	      	var params = { init : 'ctrl_infoInventario.init' }
 	    	ctrl_core.loadController("./js/controllers/ctrl_infoInventario.js",params);

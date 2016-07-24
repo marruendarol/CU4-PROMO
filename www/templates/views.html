@@ -65,8 +65,8 @@
 
 
           	<div class="small-12 medium-6 large-6 ">
-	             <div class="formLabel">No. Serie del Teléfono:</div>
-	             <input data-role="none" class="inputCustom"  style=" text-transform: uppercase;" id="serie" type="text" value=""  />
+	             <div class="formLabel">Modelo:</div>
+	             <select id="modelos"></select>
           	</div>
 
 <!-->
@@ -88,9 +88,9 @@
           	<div class="small-12 unidades">
 	          	{{#each unidades}}
 	          	<div style="margin-bottom: 5px;height: auto;overflow-y:hidden; ">
-	          	<div class="small-4 column"><div>{{noserie}}</div></div>
-	          	<div class="small-5 column"><div>{{modeloName}}</div></div>
-	          	<div class="small-3 column"><div>{{precioMask}}</div></div>
+	          	<div class="small-4 column"><div>{{idProducto}}</div></div>
+	          	<div class="small-5 column"><div>{{nombre}}</div></div>
+	          	<div class="small-3 column"><div>{{precio}}</div></div>
 	          	</div>
 	          	{{/each}}
           	</div>
@@ -247,7 +247,7 @@
 	                <a class="autoli whiteB" on-tap="listDetail" data-transition="fade">
 	                   
 	                    <div class="small-9 column rPad">
-	                        <div class="nSucursal"><div class="mCount">{{count}}</div> {{_id}}</div>
+	                        <div class="nSucursal">{{nombre}}</div>
 	                       
 	                    </div>
 
@@ -263,6 +263,54 @@
 	                </a>
 	            </li>
 	            {{/items}}
+	        </ul>
+
+	        {{#if empty}}
+	        	<h4 style="margin:20px;"> Sin Resultados, intente otra búsqueda</h4>
+	        {{/if}}
+
+	    </div>
+	</div>
+
+	<div data-role="footer" data-position="fixed" style="position:fixed;bottom:0;"> 
+			
+
+	</div> 
+
+
+</script>
+
+
+
+
+<!-- Listado 1  ============================================================-->
+<script id='corteInventarioT' type='text/ractive'>
+
+	<div id="wrapperInventario" >
+	    <div id="scroller" >
+	        <ul data-role="listview" id="listviewI">
+	            {{#modelos}}
+	            <li  data-icon="false">
+	                <a class="autoli whiteB" data-transition="fade">
+	                   
+	                    <div class="small-7 column rPad">
+	                        <div class="nSucursal"><div class="mCount">{{count}}</div> {{nombre}}</div>
+	                       
+	                    </div>
+
+	                      <div class="small-5 column rPad ">
+	                      		<div class="mBt" on-tap="addItem">+</div>
+	                      		<div class="mBt" on-tap="remItem">-</div>
+	                      </div>
+
+	                  
+
+	      
+	                    
+	                    
+	                </a>
+	            </li>
+	            {{/modelos}}
 	        </ul>
 
 	        {{#if empty}}
@@ -454,9 +502,9 @@
 	        	<div class="small-12 unidades">
 		          	{{#each unidades}}
 		          	<div style="margin-bottom: 5px;height: auto;overflow-y:hidden; ">
-		          	<div class="small-4 column"><div>{{noserie}}</div></div>
-		          	<div class="small-5 column"><div>{{modeloName}}</div></div>
-		          	<div class="small-3 column"><div>{{precioMask}}</div></div>
+		          	
+		          	<div class="small-7 column"><div>{{nombre}}</div></div>
+		          	<div class="small-3 column"><div>{{precio}}</div></div>
 		          	</div>
 		          	{{/each}}
           		</div>

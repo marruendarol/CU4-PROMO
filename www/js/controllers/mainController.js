@@ -4,8 +4,8 @@
 
 var userLat = 20.6596
 var userLng = -103.3496
-//var serverURL = "http://autotips.mx:3018";
-var serverURL = "http://promo.capitalpeople.mx:3033";
+var serverURL = "http://localhost:3033";
+//var serverURL = "http://promo.capitalpeople.mx:3033";
 var paramsPage = {}
 var scrolls = false;
 

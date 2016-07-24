@@ -7,6 +7,7 @@ var ctrl_registroVenta = {
 	card : {},
 	life : "",
 	unidades : [],
+	modelosHolder : {},
 	init : function(data,template){
 		ctrl_registroVenta.data = data;
 		ctrl_registroVenta.render();
@@ -51,7 +52,8 @@ var ctrl_registroVenta = {
 							value		:'_id',
 							label		:'nombre',
 							placeholder	: "Seleccione un modelo",
-							defaultVal	: { }
+							defaultVal	: { },
+							rsHolder 	: ctrl_registroVenta.modelosHolder
 							}); 
 
 		  	 
@@ -62,12 +64,16 @@ var ctrl_registroVenta = {
 			});
 
 
-		ctrl_registroVenta.mainObj.on('agregarUnidad',function(){
+		ctrl_registroVenta.mainObj.on('agregarUnidad',function(e){
 
-			var rObj= {
-				noserie : $('#serie').val(), 
-			}
-			ctrl_registroVenta.validateSerie(rObj.noserie)
+			var infoUnit = JSON.search(ctrl_registroVenta.modelosHolder,'//*[_id="'+  $('#modelos').val() +'"]')[0];
+
+			ctrl_registroVenta.unidades.push(infoUnit);
+			ctrl_registroVenta.mainObj.set('unidades',ctrl_registroVenta.unidades);
+			$('#monto').val(ctrl_registroVenta.getMontoTotal());
+			ctrl_registroVenta.myScroll.refresh() 
+		
+			//ctrl_registroVenta.validateSerie(rObj.noserie)
 		})
 
 		  $('#monto').inputmask("numeric", {
@@ -142,7 +148,7 @@ var ctrl_registroVenta = {
 		var suma = 0;
 		console.log(ctrl_registroVenta.unidades)
 		for (var i = 0; i < ctrl_registroVenta.unidades.length; i++) {
-			suma += parseFloat(ctrl_registroVenta.unidades[i].precio)
+			suma += parseFloat(ctrl_registroVenta.unidades[i].precio.replace(/[^0-9.]/g, ''))
 			console.log(suma)
 		}
 		return suma;
@@ -213,21 +219,21 @@ var ctrl_registroVenta = {
 	},
 	getExternal : function(extra){
 
-
-		console.log(extra)
 		var params = {}
 		dbC.query(extra.url,"POST",params,ctrl_registroVenta.external_Return,null,extra)
 	},
 	external_Return : function(result,extra){
 
 		console.log(extra)
+		var variable = eval(extra.rsHolder) ;
+		variable['data'] = result.data;
 				// Place Holder
 		$(extra.div).append('<option value="" disabled selected>'+extra.placeholder+'</option>')
 
 		for (var a in result.data){
 			$(extra.div).append('<option value="'+ result.data[a][extra.value] +'">' + result.data[a][extra.label] +'</option>')
 		}
-		console.log(extra.defaultVal,"valor extra")
+
 		if(extra.defaultVal!=null){
 			$(extra.div).val(extra.defaultVal);
 		}

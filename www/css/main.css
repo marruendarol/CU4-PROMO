@@ -5,6 +5,18 @@
 	-webkit-box-shadow: none;
 }
 
+.mBt{
+	width: 40px;
+	background-color: #017fa9;
+	height: 35px;
+	float: right;
+	margin-right: 10px;
+	border-radius: 7px;
+	text-align: center;
+	font-size: 19px;
+	line-height: 36px;
+}
+
 
 .ulList{
 	margin-left: 10px !important;
@@ -75,7 +87,7 @@ body{
 	margin: 0px;
 	height: 100%;
 	background-color: #FFFFFF;
-	color: #F3F3F3 !important;
+	color: #717171 !important;
 	font-family: "Arial";
 }
 
